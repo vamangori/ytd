@@ -1,71 +1,87 @@
-Ultimate YouTube Downloader 🐍
-A powerful, user-friendly command-line tool built with Python to download YouTube videos, audio, and entire playlists with full control over quality. This script is designed to be a safe, ad-free, and reliable alternative to sketchy websites, featuring a modern CLI and an automatic setup process for all its dependencies.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d407ba5ae63d465856753403f8513/topics/python/python.png" alt="Python" width="100">
+</p>
 
-Why This Project?
-The internet is flooded with YouTube downloader websites that are often slow, filled with intrusive ads and pop-ups, and limit your download quality. This project was born out of the need for a clean, powerful, and reliable solution that puts the user in control.
+<h1 align="center">
+  Ultimate YouTube Downloader 🐍
+</h1>
 
-This script solves the biggest problems with online downloaders:
+<p align="center">
+  A powerful, self-sufficient command-line tool to download YouTube videos, audio, and playlists in any quality without ads or sketchy websites.
+</p>
 
-No Ads or Sketchy Redirects: A clean, safe experience directly in your terminal.
+<p align="center">
+  <img alt="Python Version" src="https://img.shields.io/badge/python-3.7+-blue.svg">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-green.svg">
+  <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg">
+</p>
 
-No Quality Limitations: Download videos in their original quality, up to 4K/8K.
+> The definitive, ad-free solution for downloading YouTube content with full control and a modern, user-friendly interface.
 
-No Hassle with Dependencies: The script automatically handles the installation of FFmpeg, the most critical (and often trickiest) dependency for high-quality downloads.
+<p align="center">
+  <img src="https://i.imgur.com/gYjB4nE.gif" alt="Script Demo" width="800">
+</p>
 
-✨ Key Features
-Automatic FFmpeg Installer: On its first run, the script detects if FFmpeg is missing, asks for permission, and automatically downloads and sets it up for you. This unlocks high-quality downloads without any manual setup.
+---
 
-Full Video Quality Selection: For any single video, the script fetches a list of all available resolutions (e.g., 480p, 720p, 1080p, 4K) and lets you choose your preferred quality.
+## ✨ Key Features
 
-Smart Playlist Handling:
+This script is packed with features designed for a seamless and powerful user experience.
 
-Automatically detects playlist URLs.
+| Feature                      | Description                                                                                                                              |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **🤖 Automatic FFmpeg Setup** | On first run, it detects if FFmpeg is missing and **installs it for you**, unlocking all high-quality formats automatically.               |
+| **🎞️ Full Quality Control** | Fetches and displays all available resolutions (up to 8K) for any video, allowing you to choose the exact quality you want.          |
+| **🎵 Audio Quality Selection** | Lets you choose the desired audio quality (Best, Good, etc.) to balance file size and fidelity. Saves as `.mp3` with FFmpeg.      |
+| **📚 Smart Playlist Handling** | Automatically detects playlists, asks for a max quality, and saves all files into a **named folder** or a single **ZIP archive**.    |
+| **💅 Modern & Intuitive CLI** | Built with `rich` for a beautiful interface with clear prompts, colors, and progress indicators that make it a pleasure to use.      |
+| **🛡️ Safe & Reliable Engine** | Powered by `yt-dlp`, the industry-standard tool for video downloading, ensuring maximum compatibility and reliability.                 |
 
-Asks for your desired maximum quality (e.g., 1080p) to apply to all videos.
+---
 
-Downloads and neatly organizes all files into a folder named after the playlist.
+## 🛠️ Installation & Setup
 
-Audio Quality Selection: Choose your desired audio quality (Best, Good, Standard) to balance file size and fidelity. When FFmpeg is available, audio is saved in the universal .mp3 format.
+Getting started is simple. You just need to have **Python 3.7+** installed.
 
-Modern & Intuitive CLI: Built with the rich library for a beautiful, user-friendly interface with clear prompts, colors, and progress indicators.
-
-Safe & Reliable Engine: Powered by yt-dlp, the industry-standard tool for video downloading, ensuring maximum compatibility and reliability.
-
-🛠️ Installation & Setup
-Getting started is simple. You just need to have Python 3.7+ installed on your system.
+#### **1. Clone the Repository**
+Open your terminal and clone this repository to your local machine.
 
 1. Clone the Repository
 Open your terminal and clone this repository to your local machine.
 
 Bash
 
-git clone https://github.com/your-username/git-name.git
+# Make sure the repository name matches the folder name
+git clone https://github.com/your-username/ultimate-youtube-downloader.git
 cd ultimate-youtube-downloader
 2. Install Dependencies
-This project's dependencies are listed in the requirements.txt file. Install them using pip:
+This project's dependencies are listed in requirements.txt. Install them in one go using pip.
 
 Bash
 
 pip install -r requirements.txt
-(You will need to create a requirements.txt file with the content below.)
+<details>
+<summary><b>Click to see requirements.txt content</b></summary>
 
-requirements.txt
+Plaintext
+
+# requirements.txt
 yt-dlp
 rich
 requests
 py7zr
+</details>
+
 🚀 How to Use
-Once the setup is complete, you can run the script from your terminal.
+Once the setup is complete, running the script is straightforward.
 
 1. Run the Script
-
 Bash
 
-python youtube_d.py
-
-
+# Using a standard name like 'main.py' or 'downloader.py' is a good practice
+python main.py
 2. First-Time FFmpeg Setup
-If you're running the script for the first time, it will check for FFmpeg. If it's not found, it will ask for your permission to download and install it automatically. It's highly recommended to press y (yes) to unlock all quality features.
+If it's your first time, the script will check for FFmpeg. If it's not found, it will ask for your permission to download and install it automatically. It's highly recommended to press y (yes) to unlock all quality features.
 
 3. Follow the On-Screen Prompts
 The script will guide you through a simple, step-by-step process:
@@ -74,29 +90,9 @@ Step 1: Paste the YouTube URL (for a single video or a playlist).
 
 Step 2: Choose whether you want to download Video or Audio.
 
-Step 3: Select your desired quality from the list of available formats.
-
-
+Step 3: Select your desired quality from the generated list.
 
 All downloaded files will be saved into a Downloads folder created in the same directory as the script.
-
-⚙️ Tech Stack
-Core Language: Python
-
-Download Engine: yt-dlp (A feature-rich fork of youtube-dl)
-
-CLI Interface: Rich (For beautiful and user-friendly terminal UIs)
-
-HTTP Requests: Requests (Used for the automatic FFmpeg downloader)
-
-Decompression: py7zr & zipfile (Used to extract the FFmpeg archive)
-
-📄 License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-⚠️ Disclaimer
-This tool is intended for personal and educational use only. Users are responsible for ensuring they comply with YouTube's terms of service and all applicable copyright laws. The developers of this tool do not condone piracy and are not responsible for any misuse of this software. Please respect the intellectual property of content creators.
-
 
 
 
