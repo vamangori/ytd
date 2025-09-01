@@ -1,4 +1,4 @@
-<h1 align="center"> PYTHONE </h1>
+<h1 align="center"> PYTHON </h1>
 
 <h1 align="center">
   Ultimate YouTube Downloader 🐍
