@@ -13,14 +13,12 @@
 <p align="center">
   <img alt="Python Version" src="https://img.shields.io/badge/python-3.7+-blue.svg">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-green.svg">
-<!--   <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"> -->
+  <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg">
 </p>
 
 > The definitive, ad-free solution for downloading YouTube content with full control and a modern, user-friendly interface.
 
-<p align="center">
-  <img src="https://i.imgur.com/gYjB4nE.gif" alt="Script Demo" width="800">
-</p>
+
 
 ---
 
