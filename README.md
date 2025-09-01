@@ -1,8 +1,6 @@
 Ultimate YouTube Downloader 🐍
 A powerful, user-friendly command-line tool built with Python to download YouTube videos, audio, and entire playlists with full control over quality. This script is designed to be a safe, ad-free, and reliable alternative to sketchy websites, featuring a modern CLI and an automatic setup process for all its dependencies.
 
-[GIF of the script in action]
-
 Why This Project?
 The internet is flooded with YouTube downloader websites that are often slow, filled with intrusive ads and pop-ups, and limit your download quality. This project was born out of the need for a clean, powerful, and reliable solution that puts the user in control.
 
@@ -41,7 +39,7 @@ Open your terminal and clone this repository to your local machine.
 
 Bash
 
-git clone https://github.com/your-username/ultimate-youtube-downloader.git
+git clone https://github.com/your-username/git-name.git
 cd ultimate-youtube-downloader
 2. Install Dependencies
 This project's dependencies are listed in the requirements.txt file. Install them using pip:
@@ -63,8 +61,8 @@ Once the setup is complete, you can run the script from your terminal.
 
 Bash
 
-python downloader.py
-(Assuming you've named the file downloader.py)
+python youtube_d.py
+
 
 2. First-Time FFmpeg Setup
 If you're running the script for the first time, it will check for FFmpeg. If it's not found, it will ask for your permission to download and install it automatically. It's highly recommended to press y (yes) to unlock all quality features.
@@ -78,7 +76,7 @@ Step 2: Choose whether you want to download Video or Audio.
 
 Step 3: Select your desired quality from the list of available formats.
 
-Final Step (for Playlists): Choose how you want to save the files (e.g., in a folder).
+
 
 All downloaded files will be saved into a Downloads folder created in the same directory as the script.
 
