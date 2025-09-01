@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d407ba5ae63d465856753403f8513/topics/python/python.png" alt="Python" width="100">
-</p>
+<h1 align="center"> PYTHONE </h1>
 
 <h1 align="center">
   Ultimate YouTube Downloader 🐍
